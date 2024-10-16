@@ -2,5 +2,5 @@
 
 - <strong>Song, J.</strong>, Fang G., Lin Z., Gu Y., and Kong X. (2023). <strong>Solution to the Conflict Between the Estimation of Resolved and Unresolved Galaxy Stellar Mass from the Perspective of JWST</strong>, [ApJ](https://doi.org/10.3847/1538-4357/ad0365)
 
-- <strong>Song, J.</strong>, Fang G., Ba S., Lin Z., Gu Y., Zhou C., Wang T., Hao C., Liu G., Zhang H., Yao Y., and Kong X. (2024). <strong>USmorph: An Updated Framework of Automatic Classification of Galaxy Morphologies and Its Application to Galaxies in the COSMOS Field<strong>, [ApJ](https://doi.org/10.3847/1538-4365/ad434f)
+- <strong>Song, J.</strong>, Fang G., Ba S., Lin Z., Gu Y., Zhou C., Wang T., Hao C., Liu G., Zhang H., Yao Y., and Kong X. (2024). <strong>USmorph: An Updated Framework of Automatic Classification of Galaxy Morphologies and Its Application to Galaxies in the COSMOS Field</strong>, [ApJS](https://doi.org/10.3847/1538-4365/ad434f)
 

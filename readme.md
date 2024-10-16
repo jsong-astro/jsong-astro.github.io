@@ -1,14 +1,8 @@
 
-
-![Github Forks](https://github.com/jsong-astro/jsong-astro.github.io?style=flat)
-![Github Stars](https://github.com/jsong-astro/jsong-astro.github.io?style=flat)
-![License](https://github.com/jsong-astro/jsong-astro.github.io)
-![Last Commit](https://github.com/jsong-astro/jsong-astro.github.io)
-
 # A simple Github Pages template for academic personal website.
 
 ## Preview
-[![Screenshot of the Website](https://github.com/jsong-astro/jsong-astro.github.io/main/screenshot_full.png)](https://jsong-astro.github.io/)
+[![Screenshot of the Website](https://github.com/jsong-astro/jsong-astro.github.io/blob/main/screenshot_full.png)](https://jsong-astro.github.io/)
 
 
 ## Introduction
