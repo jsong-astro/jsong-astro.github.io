@@ -8,8 +8,9 @@ He is currently pursuing a Doctor's Degree in Astronomy & Astrophysics, at Unive
 jiesong@mail.ustc.edu.cn
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025 (expected).\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+D.E., Department of Astronomy, School of Physics, University of Science and Technology of China, 2023—2026 (expected).\
+M.E., Department of Astronomy, School of Physics, University of Science and Technology of China, 2021—2023.\
+B.E., School of Physics, University of Science and Technology of China, 2017—2021.
 
 #### Research Interests
 galaxy morphology, galaxy evolution, high-redshift galaxy
