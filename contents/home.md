@@ -1,5 +1,3 @@
-
-
 [![jsong](https://img.shields.io/badge/jsong-github-blue?logo=github)](https://jsong-astro.github.io/)
 
 He is currently pursuing a Doctor's Degree in Astronomy & Astrophysics, at University of Science and Technology of China, China.
