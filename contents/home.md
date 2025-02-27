@@ -11,6 +11,6 @@ jiesong@mail.ustc.edu.cn
 - Currently, my research focuses on analyzing slitless data from JWST, specifically examining the SFR and Metallicity Profiles at mid-high redshifts. Additionally, I am actively acquiring proficiency in processing IFU data and currently engaged in developing a data analysis pipeline tailored for CSST IFU data.
 
 #### Education
-D.E., Department of Astronomy, School of Physics, University of Science and Technology of China, 2023—2026 (expected).\
-M.E., Department of Astronomy, School of Physics, University of Science and Technology of China, 2021—2023.\
-B.E., School of Physics, University of Science and Technology of China, 2017—2021.
+D.S., Department of Astronomy, School of Physics, University of Science and Technology of China, 2023—2026 (expected).\
+M.S., Department of Astronomy, School of Physics, University of Science and Technology of China, 2021—2023.\
+B.S., School of Physics, University of Science and Technology of China, 2017—2021.
