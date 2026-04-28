@@ -1,177 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="jsong-astro" />
-    <title id="title"></title>
-
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jie Song - Astrophysicist</title>
+  <meta name="description" content="Jie Song - PhD student in Astrophysics at USTC. Research in galaxy morphology, evolution, and CSST science.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+<body>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.png');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Top Section -->
-
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">Jie Song</a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
     </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Jie Song</h1>
+      <p class="subtitle">Astrophysicist &middot; Galaxy Evolution &middot; Morphology</p>
+      <p class="affiliation">Ph.D. Student, University of Science and Technology of China<br>Visiting Researcher, University of Tokyo</p>
+      <div class="hero-links">
+        <a href="mailto:jiesong@mail.ustc.edu.cn"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://orcid.org/0000-0002-0846-7591" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
+        <a href="https://github.com/jsong-astro" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-0846-7591" target="_blank"><i class="fas fa-book-open"></i> ADS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="bio fade-in">
+        <div class="bio-photo">
+          <img src="songjie.jpg" alt="Photo of Jie Song">
         </div>
-    </section>
-    <!-- Home -->
-
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
+        <div class="bio-text">
+          <h2>About Me</h2>
+          <p class="bio-position">Ph.D. Student in Astrophysics &middot; USTC &amp; University of Tokyo</p>
+          <p>
+            I am a Ph.D. student in astrophysics at the University of Science and Technology of China (USTC),
+            working under the supervision of Prof. Xu Kong. I am currently a visiting researcher at the
+            University of Tokyo, collaborating with Prof. Masami Ouchi (May 2025 &ndash; May 2026).
+          </p>
+          <p>
+            My research focuses on <strong>galaxy evolution and morphology</strong>, with particular interests in
+            understanding how galaxy properties evolve across cosmic time. I work on nonparametric morphology
+            measurements, machine-learning-based galaxy classification, and the environmental effects on galaxy
+            properties at high redshift. I am also actively involved in the <strong>China Space Station Telescope (CSST)</strong>
+            galaxy science program, developing software tools and data analysis pipelines.
+          </p>
+          <p>
+            I have contributed to multiple first-author publications in leading journals including
+            <em>The Astrophysical Journal</em> and <em>The Astrophysical Journal Supplement Series</em>.
+          </p>
+          <ul class="bio-contact">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:jiesong@mail.ustc.edu.cn">jiesong@mail.ustc.edu.cn</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:jsong1691@gmail.com">jsong1691@gmail.com</a></li>
+            <li><i class="fab fa-orcid"></i> <a href="https://orcid.org/0000-0002-0846-7591" target="_blank">0000-0002-0846-7591</a></li>
+            <li><i class="fas fa-phone"></i> +86 15555832937</li>
+          </ul>
         </div>
-    </section>
-    <!-- Publications  -->
+      </div>
+    </div>
+  </section>
 
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
+  <!-- Latest News Section -->
+  <section class="section section-alt" id="news">
+    <div class="container">
+      <h2 class="section-title">Latest News</h2>
+      <ul class="news-list">
+        <li class="fade-in">
+          <span class="news-date">Mar 2026</span>
+          <span class="news-text">Co-author paper <em>"First Statistical Detection of Mg&nbsp;<span style="font-variant:small-caps">ii</span>-traced Cool Gas Outflows with JWST toward Cosmic Dawn"</em> published in <em>The Astrophysical Journal Letters</em> (ApJL).</span>
+        </li>
+        <li class="fade-in">
+          <span class="news-date">Mar 2026</span>
+          <span class="news-text">First-author paper <em>"Transition from Outside-in to Inside-Out at z&nbsp;~&nbsp;2: Evidence from Radial Profiles of Specific Star Formation Rate based on JWST/HST"</em> accepted for publication in <em>Astronomy &amp; Astrophysics</em> (A&amp;A).</span>
+        </li>
+        <li class="fade-in">
+          <span class="news-date">Mar 2026</span>
+          <span class="news-text">Delivered an oral talk at the <a href="http://cos.icrr.u-tokyo.ac.jp/conference/tokyojwst2026/index.html" target="_blank">Tokyo JWST Conference 2026</a>, University of Tokyo.</span>
+        </li>
+        <li class="fade-in">
+          <span class="news-date">Feb 2026</span>
+          <span class="news-text">Co-author paper <em>"Difference between Half-mass Radius and Half-light Radius of Galaxies at 0.2 &lt; z &lt; 2.5 Revealed by JWST/NIRCam Data"</em> published in <em>The Astrophysical Journal</em> (ApJ).</span>
+        </li>
+        <li class="fade-in">
+          <span class="news-date">May 2025</span>
+          <span class="news-text">Began a visiting research position at the University of Tokyo, collaborating with Prof. Masami Ouchi on high-redshift galaxy evolution.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-        </div>
-    </section>
-    <!-- Awards -->
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="mailto:jiesong@mail.ustc.edu.cn"><i class="fas fa-envelope"></i> Email</a></li>
+      <li><a href="https://orcid.org/0000-0002-0846-7591" target="_blank"><i class="fab fa-orcid"></i> ORCID</a></li>
+      <li><a href="https://github.com/jsong-astro" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      <li><a href="https://jsong-astro.github.io" target="_blank"><i class="fas fa-globe"></i> Homepage</a></li>
+    </ul>
+    <p>&copy; 2025 Jie Song. University of Science and Technology of China.</p>
+  </footer>
 
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://jsong-astro.github.io/">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://jsong-astro.github.io/main/LICENSE">License</a>
-            </div>
-        </div>
-    </footer>
-
+  <script src="main.js"></script>
 </body>
-
 </html>

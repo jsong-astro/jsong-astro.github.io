@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Jie Song</title>
+  <meta name="description" content="Research projects by Jie Song - CSST Galaxy Science and IFS instrument evaluation.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">Jie Song</a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Research Projects</h1>
+    <p>Ongoing and completed research in galaxy science</p>
+  </header>
+
+  <!-- Projects -->
+  <section class="section">
+    <div class="container">
+
+      <div class="project-card fade-in">
+        <h3><i class="fas fa-satellite"></i> &nbsp;CSST Galaxy Science Research Project</h3>
+        <p style="margin-bottom: 1rem; color: var(--color-text-light);">
+          The China Space Station Telescope (CSST) is a next-generation space survey telescope that will conduct
+          large-area multiband imaging and slitless spectroscopic surveys. As part of the CSST galaxy science
+          working group, I contribute to multiple aspects of the preparatory science program.
+        </p>
+        <ul>
+          <li>
+            <strong>Galaxy Nonparametric Morphology Measurement Software</strong>
+            <p style="margin-top: 0.3rem;">
+              Development of <em>statmorph_csst</em>, an updated framework for measuring nonparametric morphology
+              indicators (CAS, Gini-M20, MID, etc.) optimized for CSST imaging data. This tool extends the
+              capabilities of existing packages to handle the specific characteristics of CSST observations,
+              including its PSF properties and noise characteristics.
+            </p>
+          </li>
+          <li style="margin-top: 1rem;">
+            <strong>Galaxy Morphology Classification Using Machine Learning</strong>
+            <p style="margin-top: 0.3rem;">
+              Development of <em>USmorph</em>, an updated framework for automatic galaxy morphology classification.
+              USmorph integrates rotationally-invariant supervised machine learning methods with unsupervised
+              learning data sets, providing robust and efficient morphological classification for large survey
+              data sets. The framework has been applied to galaxies in the COSMOS field and published in ApJS
+              (<a href="https://doi.org/10.3847/1538-4365/ad434f" target="_blank">Song et al. 2024</a>).
+            </p>
+          </li>
+          <li style="margin-top: 1rem;">
+            <strong>Environmental Effects on Galaxy Properties at High Redshift</strong>
+            <p style="margin-top: 0.3rem;">
+              Analysis of how the local and large-scale environment influences the physical properties of
+              galaxies at high redshift (0.5 &lt; z &lt; 2.5). Using data from the COSMOS-DASH field, this work
+              investigates the environmental dependence of stellar mass, star formation rate, and morphology
+              for the most massive galaxies
+              (<a href="https://doi.org/10.3847/1538-4357/acd174" target="_blank">Song et al. 2023</a>).
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-card fade-in">
+        <h3><i class="fas fa-microscope"></i> &nbsp;CSST IFS Instrument Performance Evaluation</h3>
+        <p style="margin-bottom: 1rem; color: var(--color-text-light);">
+          The CSST Integral Field Spectrograph (IFS) will provide spatially-resolved spectroscopy for a wide
+          range of astrophysical targets. I am involved in evaluating the scientific performance of this
+          instrument through simulations and pipeline development.
+        </p>
+        <ul>
+          <li>
+            <strong>CSST IFS Data Analysis Pipeline Development</strong>
+            <p style="margin-top: 0.3rem;">
+              Building and testing a comprehensive data reduction and analysis pipeline for the CSST IFS.
+              The pipeline handles the full workflow from raw data processing to scientific measurements,
+              including spectral extraction, flux calibration, and emission line fitting.
+            </p>
+          </li>
+          <li style="margin-top: 1rem;">
+            <strong>Recovery of Galaxy Star Formation Histories</strong>
+            <p style="margin-top: 0.3rem;">
+              Evaluating the capability of the CSST IFS to recover galaxy star formation histories (SFHs)
+              through spectral energy distribution fitting of simulated IFS datacubes. This work assesses
+              how well spatially-resolved SFHs can be constrained given the instrument's spectral resolution,
+              wavelength coverage, and expected signal-to-noise ratios.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="mailto:jiesong@mail.ustc.edu.cn"><i class="fas fa-envelope"></i> Email</a></li>
+      <li><a href="https://orcid.org/0000-0002-0846-7591" target="_blank"><i class="fab fa-orcid"></i> ORCID</a></li>
+      <li><a href="https://github.com/jsong-astro" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+    </ul>
+    <p>&copy; 2025 Jie Song. University of Science and Technology of China.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
