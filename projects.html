@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Jie Song</title>
-  <meta name="description" content="Research projects by Jie Song - CSST Galaxy Science and IFS instrument evaluation.">
+  <title>Research - Jie Song</title>
+  <meta name="description" content="Research projects by Jie Song in galaxy evolution, morphology, and JWST science.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -20,7 +20,7 @@
       <ul class="navbar-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="publications.html">Publications</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="projects.html" class="active">Research</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
     </div>
@@ -28,82 +28,195 @@
 
   <!-- Page Header -->
   <header class="page-header">
-    <h1>Research Projects</h1>
-    <p>Ongoing and completed research in galaxy science</p>
+    <h1>Research</h1>
+    <p>First-author works on galaxy evolution and morphology</p>
   </header>
 
-  <!-- Projects -->
+  <!-- Project 1 -->
   <section class="section">
     <div class="container">
-
       <div class="project-card fade-in">
-        <h3><i class="fas fa-satellite"></i> &nbsp;CSST Galaxy Science Research Project</h3>
-        <p style="margin-bottom: 1rem; color: var(--color-text-light);">
-          The China Space Station Telescope (CSST) is a next-generation space survey telescope that will conduct
-          large-area multiband imaging and slitless spectroscopic surveys. As part of the CSST galaxy science
-          working group, I contribute to multiple aspects of the preparatory science program.
-        </p>
-        <ul>
-          <li>
-            <strong>Galaxy Nonparametric Morphology Measurement Software</strong>
-            <p style="margin-top: 0.3rem;">
-              Development of <em>statmorph_csst</em>, an updated framework for measuring nonparametric morphology
-              indicators (CAS, Gini-M20, MID, etc.) optimized for CSST imaging data. This tool extends the
-              capabilities of existing packages to handle the specific characteristics of CSST observations,
-              including its PSF properties and noise characteristics.
-            </p>
-          </li>
-          <li style="margin-top: 1rem;">
-            <strong>Galaxy Morphology Classification Using Machine Learning</strong>
-            <p style="margin-top: 0.3rem;">
-              Development of <em>USmorph</em>, an updated framework for automatic galaxy morphology classification.
-              USmorph integrates rotationally-invariant supervised machine learning methods with unsupervised
-              learning data sets, providing robust and efficient morphological classification for large survey
-              data sets. The framework has been applied to galaxies in the COSMOS field and published in ApJS
-              (<a href="https://doi.org/10.3847/1538-4365/ad434f" target="_blank">Song et al. 2024</a>).
-            </p>
-          </li>
-          <li style="margin-top: 1rem;">
-            <strong>Environmental Effects on Galaxy Properties at High Redshift</strong>
-            <p style="margin-top: 0.3rem;">
-              Analysis of how the local and large-scale environment influences the physical properties of
-              galaxies at high redshift (0.5 &lt; z &lt; 2.5). Using data from the COSMOS-DASH field, this work
-              investigates the environmental dependence of stellar mass, star formation rate, and morphology
-              for the most massive galaxies
-              (<a href="https://doi.org/10.3847/1538-4357/acd174" target="_blank">Song et al. 2023</a>).
-            </p>
-          </li>
-        </ul>
-      </div>
+        <h3>
+          <i class="fas fa-chart-line"></i>&nbsp;
+          Transition from Outside-in to Inside-Out at <em>z</em>&nbsp;~&nbsp;2
+        </h3>
+        <p class="project-summary">Evidence from Radial Profiles of Specific Star Formation Rate Based on JWST/HST &mdash; <em>A&amp;A</em>, accepted 2026 &nbsp;<a href="https://arxiv.org/abs/2512.01684" target="_blank"><i class="fas fa-file-alt"></i> arXiv:2512.01684</a></p>
 
+        <div class="project-body">
+          <div class="project-text">
+            <p>
+              Understanding how galaxies assemble stellar mass over cosmic time requires spatially resolved information.
+              Prior resolved studies were limited by small samples or restricted wavelength coverage, particularly
+              at <em>z</em>&nbsp;&gt;&nbsp;3 where HST alone cannot accurately measure stellar mass and SFR.
+            </p>
+            <p>
+              We combine JWST multi-wavelength imaging from the CANDELS fields (CEERS, JADES, PRIMER) with existing
+              HST data. Using PSF-matched, resolved SED fitting in concentric elliptical annuli, we derive stellar
+              mass surface density (&Sigma;<sub>*</sub>) and SFR surface density (&Sigma;<sub>SFR</sub>) for
+              <strong>46,313 galaxies</strong> at 0&nbsp;&lt;&nbsp;<em>z</em>&nbsp;&lt;&nbsp;4 with
+              log(<em>M</em><sub>*</sub>/<em>M</em><sub>&#9737;</sub>)&nbsp;&gt;&nbsp;8.
+            </p>
+            <ul class="project-results">
+              <li>At <em>z</em>&nbsp;&gt;&nbsp;2.5, sSFR profiles show mildly <em>negative</em> gradients across all
+              stellar mass bins &mdash; galaxies cannot grow in size via in-situ star formation alone, challenging
+              the conventional picture of size evolution beyond cosmic noon.</li>
+              <li>At <em>z</em>&nbsp;&lt;&nbsp;2, sSFR profiles transition to increasingly <em>positive</em>
+              gradients, consistent with inside-out growth where star formation preferentially expands the
+              galactic outskirts.</li>
+              <li>The derived SFMS and size&ndash;mass relation (r<sub>e</sub>&nbsp;&prop;&nbsp;(1+<em>z</em>)<sup>&minus;0.618</sup>) are in excellent agreement with recent JWST-based measurements.</li>
+            </ul>
+          </div>
+          <figure class="project-figure">
+            <img src="figure-1.webp" alt="Radial profiles of sSFR across redshift bins from JWST/HST data">
+            <figcaption>Radial profiles of specific SFR at different redshift bins, revealing the transition
+            from outside-in to inside-out galaxy growth at <em>z</em>&nbsp;~&nbsp;2.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 2 -->
+  <section class="section section-alt">
+    <div class="container">
       <div class="project-card fade-in">
-        <h3><i class="fas fa-microscope"></i> &nbsp;CSST IFS Instrument Performance Evaluation</h3>
-        <p style="margin-bottom: 1rem; color: var(--color-text-light);">
-          The CSST Integral Field Spectrograph (IFS) will provide spatially-resolved spectroscopy for a wide
-          range of astrophysical targets. I am involved in evaluating the scientific performance of this
-          instrument through simulations and pipeline development.
-        </p>
-        <ul>
-          <li>
-            <strong>CSST IFS Data Analysis Pipeline Development</strong>
-            <p style="margin-top: 0.3rem;">
-              Building and testing a comprehensive data reduction and analysis pipeline for the CSST IFS.
-              The pipeline handles the full workflow from raw data processing to scientific measurements,
-              including spectral extraction, flux calibration, and emission line fitting.
-            </p>
-          </li>
-          <li style="margin-top: 1rem;">
-            <strong>Recovery of Galaxy Star Formation Histories</strong>
-            <p style="margin-top: 0.3rem;">
-              Evaluating the capability of the CSST IFS to recover galaxy star formation histories (SFHs)
-              through spectral energy distribution fitting of simulated IFS datacubes. This work assesses
-              how well spatially-resolved SFHs can be constrained given the instrument's spectral resolution,
-              wavelength coverage, and expected signal-to-noise ratios.
-            </p>
-          </li>
-        </ul>
-      </div>
+        <h3>
+          <i class="fas fa-robot"></i>&nbsp;
+          USmorph: Automatic Classification of Galaxy Morphologies
+        </h3>
+        <p class="project-summary">Application to ~100,000 Galaxies in the COSMOS Field &mdash; <em>ApJS</em>, 274, 42, 2024 &nbsp;<a href="https://doi.org/10.3847/1538-4365/ad434f" target="_blank"><i class="fas fa-link"></i> DOI</a></p>
 
+        <div class="project-body project-body-reversed">
+          <div class="project-text">
+            <p>
+              Galaxy morphology is a fundamental diagnostic of evolution, yet traditional visual classification
+              is prohibitively expensive for modern large-area surveys. Purely supervised methods require
+              large prelabeled training sets that introduce subjective bias. A scalable, robust classification
+              method is essential for upcoming surveys including CSST, Euclid, and Roman.
+            </p>
+            <p>
+              We refine the USmorph framework, combining unsupervised machine learning (convolutional
+              autoencoding + Bagging-based multi-clustering) with supervised classification. Applied to
+              galaxies with <em>I</em><sub>mag</sub>&nbsp;&lt;&nbsp;25 at 0.2&nbsp;&lt;&nbsp;<em>z</em>&nbsp;&lt;&nbsp;1.2
+              in the COSMOS field using HST/ACS <em>I</em>-band images from ~590 pointings covering
+              ~1.64&nbsp;deg&sup2;.
+            </p>
+            <ul class="project-results">
+              <li>Classified ~100,000 galaxies into five types: spheroidal (SPH, 15,200), early-type disk
+              (ETD, 17,369), late-type disk (LTD, 21,143), irregular disk (IRR, 28,965), and unclassified
+              (UNC, 17,129).</li>
+              <li>Nonparametric diagnostics (Gini&ndash;<em>M</em><sub>20</sub>, C&ndash;A) confirm
+              the reliability of classifications; from SPH to IRR, effective radius increases while
+              S&eacute;rsic index decreases, consistent with physical expectations.</li>
+              <li>Morphology correlates strongly with both redshift and stellar mass, validating USmorph
+              as a robust tool for future large-field surveys including CSST.</li>
+            </ul>
+          </div>
+          <figure class="project-figure">
+            <img src="figure-2.webp" alt="USmorph classification results for COSMOS galaxies">
+            <figcaption>Example morphological classifications from USmorph applied to galaxies in the
+            COSMOS field, spanning five morphological types from spheroidal to irregular.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 3 -->
+  <section class="section">
+    <div class="container">
+      <div class="project-card fade-in">
+        <h3>
+          <i class="fas fa-balance-scale"></i>&nbsp;
+          Resolving the Conflict in Galaxy Stellar Mass Estimation with JWST
+        </h3>
+        <p class="project-summary">Resolved vs. Unresolved SED Fitting from the Perspective of JWST &mdash; <em>ApJ</em>, 958, 82, 2023 &nbsp;<a href="https://doi.org/10.3847/1538-4357/ad0365" target="_blank"><i class="fas fa-link"></i> DOI</a></p>
+
+        <div class="project-body">
+          <div class="project-text">
+            <p>
+              Stellar mass is a fundamental quantity in galaxy evolution, yet previous work reported
+              significant discrepancies between stellar mass from spatially resolved (pixel-by-pixel)
+              SED fitting and integrated photometry &mdash; commonly attributed to the outshining effect
+              of young stellar populations. It remained unclear whether this reflects a genuine physical
+              effect or an artifact of insufficient wavelength coverage.
+            </p>
+            <p>
+              We use early JWST/CEERS observations combined with HST imaging to perform spatially resolved
+              SED fitting for <strong>1,060 galaxies</strong> at 0.2&nbsp;&lt;&nbsp;<em>z</em>&nbsp;&lt;&nbsp;3.0
+              with log(<em>M</em><sub>*</sub>)&nbsp;&gt;&nbsp;9, using six NIRCam broadband filters
+              (F115W&ndash;F444W) plus two HST filters.
+            </p>
+            <ul class="project-results">
+              <li>Without rest-frame NIR data, stellar mass can be overestimated by up to 0.2&nbsp;dex, as
+              SED fitting overestimates both stellar age and dust attenuation in the absence of NIR
+              coverage.</li>
+              <li>After incorporating JWST NIR photometry, no significant difference exists between
+              resolved and unresolved mass estimates out to <em>z</em>&nbsp;~&nbsp;3; the median bias
+              is ~0.02&nbsp;dex.</li>
+              <li>Reliable stellar mass estimates require only that the reddest SED filter covers a
+              rest-frame wavelength &gt;&nbsp;10,000&nbsp;&Aring; &mdash; a practical guideline for
+              high-redshift studies.</li>
+            </ul>
+          </div>
+          <figure class="project-figure">
+            <img src="figure-3.webp" alt="Comparison of resolved and unresolved stellar mass estimates with and without JWST NIR data">
+            <figcaption>Comparison of resolved and unresolved stellar mass estimates with and without
+            JWST NIR photometry, demonstrating the resolution of the mass discrepancy at
+            <em>z</em>&nbsp;&lt;&nbsp;3.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 4 -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="project-card fade-in">
+        <h3>
+          <i class="fas fa-globe"></i>&nbsp;
+          Environmental Effects on the Most Massive Galaxies at 0.5 &lt; <em>z</em> &lt; 2.5
+        </h3>
+        <p class="project-summary">Properties of Massive Galaxies in the COSMOS-DASH Field &mdash; <em>ApJ</em>, 950, 130, 2023 &nbsp;<a href="https://doi.org/10.3847/1538-4357/acd174" target="_blank"><i class="fas fa-link"></i> DOI</a></p>
+
+        <div class="project-body project-body-reversed">
+          <div class="project-text">
+            <p>
+              Both internal processes (AGN and supernova feedback) and external environmental factors
+              (mergers and interactions) influence galaxy evolution, yet their relative roles for the most
+              massive galaxies remain poorly understood. Results at intermediate and high redshift are
+              contradictory, particularly for galaxies with
+              log(<em>M</em><sub>*</sub>/<em>M</em><sub>&#9737;</sub>)&nbsp;&gt;&nbsp;11.
+            </p>
+            <p>
+              We select <strong>1,684 massive galaxies</strong> with
+              log(<em>M</em><sub>*</sub>)&nbsp;&gt;&nbsp;11 at 0.5&nbsp;&lt;&nbsp;<em>z</em>&nbsp;&lt;&nbsp;2.5
+              from the COSMOS2020 catalog. The COSMOS-DASH field provides the largest contiguous
+              HST/WFC3 near-IR imaging to date. We estimate local overdensity using a Bayesian density
+              estimator and perform both parametric and nonparametric morphological measurements.
+            </p>
+            <ul class="project-results">
+              <li>The morphologies (S&eacute;rsic index, effective radius, Gini, <em>M</em><sub>20</sub>)
+              of the most massive galaxies show <em>no significant environmental dependence</em> across
+              the full redshift range, with weak evidence for larger S&eacute;rsic indices in denser
+              environments at <em>z</em>&nbsp;&lt;&nbsp;1.</li>
+              <li>For star-forming galaxies, sSFR is independent of environment at all redshifts;
+              the primary environmental effect is to regulate the <em>quiescent fraction</em>
+              rather than suppress ongoing star formation.</li>
+              <li>The quiescent fraction increases significantly in denser environments at
+              <em>z</em>&nbsp;&lt;&nbsp;2, suggesting rapid environmental quenching &mdash; plausibly
+              driven by mergers &mdash; operating on short timescales.</li>
+            </ul>
+          </div>
+          <figure class="project-figure">
+            <img src="figure-4.webp" alt="Environmental dependence of galaxy properties in the COSMOS-DASH field">
+            <figcaption>Environmental dependence of morphological and star-forming properties of the
+            most massive galaxies at 0.5&nbsp;&lt;&nbsp;<em>z</em>&nbsp;&lt;&nbsp;2.5 in
+            COSMOS-DASH.</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </section>
 
