@@ -1,0 +1,17 @@
+// Shared news archive, newest first. Add new entries here.
+const newsItems = [
+  "<li class=\"fade-in\"><span class=\"news-date\">Sep 2026</span><span class=\"news-text\">Successfully defended my Ph.D. thesis.</span></li>",
+  "<li class=\"fade-in\">\n          <span class=\"news-date\">Jun 2026</span>\n          <span class=\"news-text\">Delivered an oral talk at the workshop <em>\"Early Galaxy Formation and Evolution in the JWST Era\"</em>.</span>\n        </li>",
+  "<li class=\"fade-in\">\n          <span class=\"news-date\">May 2026</span>\n          <span class=\"news-text\">First-author paper <a href=\"https://arxiv.org/abs/2605.23049\" target=\"_blank\"><em>\"SDSS+JWST Census of Stellar and Nebular Dust Attenuation at z&nbsp;~&nbsp;0&ndash;7: Mass Dependence and Redshift Evolution\"</em></a> uploaded to arXiv.</span>\n        </li>",
+  "<li class=\"fade-in\">\n          <span class=\"news-date\">May 2026</span>\n          <span class=\"news-text\">Delivered an oral talk at the 2026 Guo Shoujing Conference.</span>\n        </li>",
+  "<li class=\"fade-in\">\n          <span class=\"news-date\">May 2026</span>\n          <span class=\"news-text\">First-author paper <a href=\"https://ui.adsabs.harvard.edu/abs/2026A%26A...709A.205S/abstract\" target=\"_blank\"><em>\"Transition from Outside-in to Inside-Out at z&nbsp;~&nbsp;2: Evidence from Radial Profiles of Specific Star Formation Rate based on JWST/HST\"</em></a> published in <em>Astronomy &amp; Astrophysics</em> (A&amp;A).</span>\n        </li>",
+  "<li class=\"fade-in\">\n          <span class=\"news-date\">May 2026</span>\n          <span class=\"news-text\">Return to USTC after completing my visit at ICRR.</span>\n        </li>",
+  "<li class=\"fade-in\">\n          <span class=\"news-date\">Mar 2026</span>\n          <span class=\"news-text\">Co-author paper <a href=\"https://ui.adsabs.harvard.edu/abs/2026ApJ..1000L...3L/abstract\" target=\"_blank\"><em>\"First Statistical Detection of Mg&nbsp;<span style=\"font-variant:small-caps\">ii</span>-traced Cool Gas Outflows with JWST toward Cosmic Dawn\"</em></a> published in <em>The Astrophysical Journal Letters</em> (ApJL).</span>\n        </li>",
+  "<li class=\"fade-in\">\n          <span class=\"news-date\">Mar 2026</span>\n          <span class=\"news-text\">Delivered an oral talk at the <a href=\"http://cos.icrr.u-tokyo.ac.jp/conference/tokyojwst2026/index.html\" target=\"_blank\">Tokyo JWST Conference 2026</a>, University of Tokyo.</span>\n        </li>",
+  "<li class=\"fade-in\">\n          <span class=\"news-date\">Feb 2026</span>\n          <span class=\"news-text\">Co-author paper <a href=\"https://ui.adsabs.harvard.edu/abs/2026ApJ...998..229X/abstract\" target=\"_blank\"><em>\"Difference between Half-mass Radius and Half-light Radius of Galaxies at 0.2 &lt; z &lt; 2.5 Revealed by JWST/NIRCam Data\"</em></a> published in <em>The Astrophysical Journal</em> (ApJ).</span>\n        </li>",
+  "<li class=\"fade-in\">\n          <span class=\"news-date\">May 2025</span>\n          <span class=\"news-text\">Began a visiting research position at the University of Tokyo, collaborating with Prof. Masami Ouchi on high-redshift galaxy evolution.</span>\n        </li>"
+];
+document.querySelectorAll('[data-news-list]').forEach(function (list) {
+  const limit = Number(list.dataset.newsLimit) || newsItems.length;
+  list.innerHTML = newsItems.slice(0, limit).join('\n');
+});
